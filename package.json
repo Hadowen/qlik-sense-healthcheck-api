@@ -1,0 +1,31 @@
+{
+  "name": "qlik-sense-healthcheck-api",
+  "version": "1.0.0",
+  "description": "Logs results from the Qlik Sense engine healthcheck API.",
+  "main": "monitor.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hadowen/qlik-sense-healthcheck-api.git"
+  },
+  "keywords": [
+    "JavaScript",
+    "Node",
+    "Qlik",
+    "Sense"
+  ],
+  "author": "John H. Bosko",
+  "license": "GNU Version 3",
+  "bugs": {
+    "url": "https://github.com/Hadowen/qlik-sense-healthcheck-api/issues"
+  },
+  "homepage": "https://github.com/Hadowen/qlik-sense-healthcheck-api#readme",
+  "dependencies": {
+    "dayjs": "^1.8.17",
+    "fs": "0.0.1-security",
+    "https": "^1.0.0",
+    "os": "^0.1.1"
+  }
+}
