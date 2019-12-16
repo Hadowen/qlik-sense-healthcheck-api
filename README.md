@@ -59,7 +59,10 @@ Simply specify the name of the reload task, Send CPU Warning Email for example, 
 # Download, install, and configure the JavaScript code provided here
 Download and extract the contents of the zip file from GitHub.  Open the folder in Visual Studio Code and in a new terminal window, type "npm install" to install the node modules needed to run this code.
 
-In both the emailWarning.js and the engineHealthCheck.js files, add the hostname and virtual proxy if needed to communicate with the engine API.
+In both the emailWarning.js and the engineHealthCheck.js files, add the hostname and virtual proxy if needed to communicate with the engine API.  Also, replace the RAM warning task and the CPU task GIUDs in the engineHealthCheck.js code (lines 65 and 70) with the correct
+GUIDs from your environment.
+
+The default CPU threshold is 91% or above.  If your needs are different, this can be changed in the engineHealthCheck.js file @ line 68.
 
 
 # Export the Qlik certificates from the QMC
