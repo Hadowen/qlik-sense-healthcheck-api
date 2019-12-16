@@ -32,7 +32,7 @@ module.exports =
         //console.log("Request RESPONSE: " + chunk);
         let info = JSON.parse(chunk);
         fs.appendFile('EngineHealthCheck.txt',
-                `${dayjs().format('YYYY-MM-DD hh:mm:ss')} `
+                `${dayjs().format('YYYY-MM-DD HH:mm:ss')} `
                     + (!info.saturated? `INFO`: `WARN`) + ` `
                     + info.version + ` `
                     + info.started + ` `
@@ -69,7 +69,7 @@ module.exports =
             // GUID for the CPU email task:
             sendWarning('55b2253a-cc1b-4a5d-a19f-2a85ff030618');
         };
-        console.log(`${dayjs().format('YYYY-MM-DD hh:mm:ss')} ` + info.mem.free +
+        console.log(`${dayjs().format('YYYY-MM-DD HH:mm:ss')} ` + info.mem.free +
                 '  Active Users: ' + info.users.active +
                 '  Total Users: ' + info.users.total);
     });
